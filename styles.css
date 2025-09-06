@@ -44,7 +44,7 @@ section {
 #navbar ul {
     list-style: none;
     display: flex;
-    gap: 20px; /* Replaced margin-left with gap for modern flexbox */
+    gap: 20px;
 }
 
 #navbar ul li a {
@@ -96,13 +96,13 @@ section {
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 1100px;
-    width: 90%; /* Using relative width for better responsiveness */
+    width: 90%;
     background-color: rgba(43, 42, 42, 0.5);
     border-radius: 20px;
     padding: 40px;
-    position: relative; /* Changed to relative for simpler positioning */
+    position: relative;
     animation: slide-in-from-left 2s forwards;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Added for better depth */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 @keyframes slide-in-from-left {
@@ -120,7 +120,7 @@ section {
 }
 
 .hero-text h1 {
-    font-size: clamp(2rem, 5vw, 3rem); /* Modern clamp for fluid typography */
+    font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: 10px;
 }
 
@@ -240,7 +240,7 @@ section {
 }
 
 .slider:focus {
-    outline: 2px solid transparent; /* Hide default focus outline */
+    outline: 2px solid transparent;
     box-shadow: 0 0 0 3px rgba(255,107,107,0.15);
 }
 
@@ -255,7 +255,7 @@ section {
     justify-content: center;
     list-style: none;
     margin-top: 20px;
-    gap: 10px; /* Use gap for spacing */
+    gap: 10px;
 }
 
 .skills-list li {
@@ -299,7 +299,7 @@ section {
 }
 
 .cert-card:hover {
-    transform: scale(1.05); /* Slightly less aggressive scale */
+    transform: scale(1.05);
     box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
@@ -355,7 +355,7 @@ footer {
         position: absolute;
         top: 60px;
         left: 0;
-        width: 100%; /* Changed to 100% for full-width menu */
+        width: 100%;
         border-radius: 0;
         padding: 10px 0;
     }
@@ -371,7 +371,7 @@ footer {
     .hero-content {
         flex-direction: column;
         text-align: center;
-        width: 95%; /* Wider on mobile */
+        width: 95%;
     }
 
     .hero-text h1 {
@@ -409,3 +409,4 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
