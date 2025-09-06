@@ -373,6 +373,7 @@ section {
     padding: 80px 20px;
     text-align: center;
     background: #6e0000;
+    color: #fff;
 }
 
 .contact-icons {
@@ -461,6 +462,7 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
 
 
 
