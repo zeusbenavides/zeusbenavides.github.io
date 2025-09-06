@@ -70,14 +70,18 @@ section {
 
 /* Hero Section */
 #hero {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-    padding-top: 80px;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding-top: 80px;
+  overflow: hidden; /* Added to the main block */
+  border-bottom-right-radius: 0px; /* Added to the main block */
+  border-bottom-left-radius: 0px; /* Added to the main block */
+  transition: border-radius 0.3s ease-out; /* Added to the main block */
 }
 
 #hero-video {
@@ -415,5 +419,6 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
 
 
