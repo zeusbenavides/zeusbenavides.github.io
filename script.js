@@ -1,3 +1,24 @@
+
+/* typing animation */
+document.addEventListener('DOMContentLoaded', function() {
+    var typed = new Typed('#hero-title-typed', {
+        strings: [
+            "Hello there!",
+            "I'm Zeus Benavides",
+            "A Web Designer",
+            "Front End Developer",
+            "And Data Annotation Specialist",
+            "Welcome to my portfolio!"
+        ],
+        typeSpeed: 80,
+        backSpeed: 50,
+        loop: true,
+        smartBackspace: false
+    });
+});
+
+
+
 // Generic slider for .slider elements
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.slider').forEach(initSlider);
@@ -80,49 +101,37 @@ function initSlider(slider){
 
 // --- Border-Radius Scroll Effect ---
 const heroSection = document.getElementById('hero');
+const maxRadius = 500; 
 
-// Define the maximum border-radius you want to achieve for each side (in pixels)
-const maxRadius = 500; // Adjust this value for the desired effect
-
-// Listen for the scroll event on the window
 window.addEventListener('scroll', () => {
-  // Get the current scroll position
+
   const scrollPosition = window.scrollY;
-  
-  // Get the height of the hero section
   const heroHeight = heroSection.offsetHeight;
-
-  // Calculate the scroll percentage within the hero section
   const scrollPercentage = Math.min(scrollPosition / heroHeight, 1);
-
-  // Calculate the new border-radius value
   const newRadius = scrollPercentage * maxRadius;
 
-  // Apply the new border-radius to both bottom sides
+
   heroSection.style.borderBottomLeftRadius = `${newRadius}px`;
   heroSection.style.borderBottomRightRadius = `${newRadius}px`;
 });
 
-// Function to add the 'active' class when an element is visible
+
 function revealOnScroll(entries, observer) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('active');
-      // Stop observing the element after it has been revealed
+      
       observer.unobserve(entry.target);
     }
   });
 }
 
-// Set up the Intersection Observer
 const revealElements = document.querySelectorAll('.reveal');
-
 const observer = new IntersectionObserver(revealOnScroll, {
-  root: null, // use the viewport as the root
-  threshold: 0.15, // trigger when 15% of the element is visible
+  root: null,
+  threshold: 0.15,
 });
 
-// Observe each of the reveal elements
 revealElements.forEach(element => {
   observer.observe(element);
 });
