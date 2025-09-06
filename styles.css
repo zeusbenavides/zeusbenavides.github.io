@@ -78,10 +78,10 @@ section {
   text-align: center;
   color: #fff;
   padding-top: 80px;
-  overflow: hidden; /* Added to the main block */
-  border-bottom-right-radius: 0px; /* Added to the main block */
-  border-bottom-left-radius: 0px; /* Added to the main block */
-  transition: border-radius 0.3s ease-out; /* Added to the main block */
+  overflow: hidden;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  transition: border-radius 0.3s ease-out;
 }
 
 #hero-video {
@@ -419,6 +419,7 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
 
 
 
