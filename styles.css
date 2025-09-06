@@ -322,16 +322,22 @@ section {
 
 /* Contact Section */
 #contact {
+    padding: 80px 20px;
     text-align: center;
     background: #6e0000;
     color: #fff;
+}
+
+.contact-icons {
+    margin-top: 20px;
 }
 
 .contact-icons a {
     color: #fff;
     margin: 0 15px;
     font-size: 2rem;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
+    text-decoration: none;
 }
 
 .contact-icons a:hover {
@@ -409,4 +415,5 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
 
