@@ -4,12 +4,12 @@ document.addEventListener('DOMContentLoaded', function() {
     var typed = new Typed('#hero-title-typed', {
         strings: [
             "Hello there!",
-            "I'm Zeus Benavides",
-            "A Web Designer",
-            "Front End Developer",
-            "And Data Annotation Specialist",
+            "I'm <span style='color:#5f0e1b;'>Zeus Benavides</span>",
+            "A <span style='color:#5f0e1b;'>Web Designer</span>",
+            "<span style='color:#5f0e1b;'>Front End Developer</span>",
+            "And <span style='color:#5f0e1b;'>Data Annotation Specialist</span>",
             "Welcome to my portfolio!"
-        ],
+            ],
         typeSpeed: 80,
         backSpeed: 50,
         loop: true,
@@ -135,3 +135,24 @@ const observer = new IntersectionObserver(revealOnScroll, {
 revealElements.forEach(element => {
   observer.observe(element);
 });
+
+
+const menuIcon = document.getElementById("menu-icon");
+const menuList = document.getElementById("menu-list");
+
+  menuIcon.addEventListener("click", () => {
+  menuList.classList.toggle("show");
+});
+  
+
+function openModal(src) {
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImg");
+  modal.style.display = "flex";
+  modalImg.src = src;
+}
+
+function closeModal() {
+  document.getElementById("imgModal").style.display = "none";
+}
+
