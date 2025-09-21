@@ -14,7 +14,7 @@
         <nav id="navbar">
             <div class="menu-icon" id="menu-icon">&#9776;</div>
             <ul id="menu-list"> <li><a href="#hero">ABOUT</a></li>
-                <li><a href="#projects">MY WORK</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#skills">SKILLS</a></li>
                 <li><a href="#certifications">CERTS</a></li>
                 <li><a href="#contact">CONTACT</a></li>
@@ -53,7 +53,7 @@
     <!-- Gadget Store -->
     <div class="project-card" onclick="openModal('images/Godget Store.png')">
       <img src="images/Godget Store.png" alt="Project 1">
-      <div class="overlay">View Project</div>
+      <div class="overlay">Click to view project</div>
       <div class="project-info">
         <h3>Gadget Store Website</h3>
         <p>A modern online gadget store layout with product grid, categories, and checkout flow.</p>
@@ -63,7 +63,7 @@
     <!-- Black Clothing Store -->
     <div class="project-card" onclick="openModal('images/Black.png')">
       <img src="images/Black.png" alt="Black Clothing Store">
-      <div class="overlay">View Project</div>
+      <div class="overlay">Click to view project</div>
       <div class="project-info">
         <h3>Black Clothing Store</h3>
         <p>An e-commerce clothing store design with product listings, filters, and a smooth checkout experience.</p>
@@ -73,7 +73,7 @@
     <!-- Coffee Shop -->
     <div class="project-card" onclick="openModal('images/everydaycoffee.png')">
       <img src="images/everydaycoffee.png" alt="Coffee Shop Website">
-      <div class="overlay">View Project</div>
+      <div class="overlay">Click to view project</div>
       <div class="project-info">
         <h3>Coffee Shop Website</h3>
         <p>Landing page design for a coffee shop with menu highlights and order section.</p>
@@ -83,7 +83,7 @@
     <!-- Burger -->
     <div class="project-card" onclick="openModal('images/Burger.png')">
       <img src="images/Burger.png" alt="Burger Website">
-      <div class="overlay">View Project</div>
+      <div class="overlay">Click to view project</div>
       <div class="project-info">
         <h3>Burger Restaurant Website</h3>
         <p>A stylish food business site featuring a burger menu, promos, and online ordering option.</p>
@@ -93,7 +93,7 @@
     <!-- Italiana -->
     <div class="project-card" onclick="openModal('images/Italiana.png')">
       <img src="images/Italiana.png" alt="Italian Restaurant Website">
-      <div class="overlay">View Project</div>
+      <div class="overlay">Click to view project</div>
       <div class="project-info">
         <h3>Italian Restaurant Website</h3>
         <p>A modern Italian-inspired restaurant design with elegant layout and menu highlights.</p>
@@ -106,8 +106,14 @@
 <!-- Modal -->
 <div id="imgModal" class="modal">
   <span class="close" onclick="closeModal()">&times;</span>
+  <div class="modal-controls">
+    <button onclick="zoomIn()">+</button>
+    <button onclick="zoomOut()">-</button>
+    <button onclick="resetZoom()">Reset</button>
+  </div>
   <img class="modal-content" id="modalImg">
 </div>
+
 
 
     <section id="skills" class="reveal">
@@ -183,19 +189,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
